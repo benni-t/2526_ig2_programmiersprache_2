@@ -1,6 +1,7 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
-	import Pattern from '$lib/components/1_PatternRect.svelte';	
+	// import Pattern from '$lib/components/1_PatternRect.svelte';	
+	import Pattern from '$lib/components/2_PatternRectStruct.svelte';	
 </script>
 
 <div class="app-container">
