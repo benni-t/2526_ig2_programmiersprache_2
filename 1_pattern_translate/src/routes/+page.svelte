@@ -4,7 +4,9 @@
 	// import Pattern from '$lib/components/2_1_PatternRectStruct.svelte';
 	// import Pattern from '$lib/components/2_2_PatternRectStructColor.svelte';
 	// import Pattern from '$lib/components/3_1_PatternPolygon.svelte';
-	import Pattern from '$lib/components/3_2_PatternPolygonReactive.svelte';
+	// import Pattern from '$lib/components/3_2_PatternPolygonReactive.svelte';
+	// import Pattern from '$lib/components/3_3_PatternPolygonReactiveOffsetSize.svelte';
+  import Pattern from '$lib/components/4_PatternCubes.svelte';
 </script>
 
 <div class="app-container">
