@@ -1,27 +1,26 @@
 # Implement Pattern-Sidebar
 
-## Änderung app.css
+## 1. Änderung in app.css
 app.css in eurem Projekt ersetzen. Falls ihr die geändert habt, darauf achten, dass ihr die Datei nicht komplett überschreibt.
 
 
-## Änderung page.svelte
-page.svelte anpassen, wie folgt:
+## 2. Änderung in page.svelte
 
 
-<b>Slide-Transitions Patternwechsel</b>
+#### Slide-Transitions Patternwechsel
 ```
 import { slide } from 'svelte/transition';
 ```
 
 
-#### eure Pattern-Imports
+#### Eure Pattern-Imports
 ```
 import Pattern1 from '$lib/components/1_PatternPolygonReactive.svelte';
 import Pattern2 from '$lib/components/2_PatternPolygonReactiveOffsetSize.svelte';
 ```
 
 
-#### Beschreibung der Patterns für die Sidebar, mit Verknüpfung der Komponenten
+#### Beschreibung der Patterns für die Sidebar, mit Verknüpfung zu euren Komponenten
 ```
 let patterns = [
   {
@@ -72,7 +71,7 @@ let SelectedPattern = $derived(patterns[selectedPattern].component);
 ```
 
 
-## Änderung im Pattern 
+## 3. Änderung in euren Patterns
 Sidebar-Right in Pattern-Komponente hinzufügen, sie z.b. 1_PatternPolygonReactive.svelte
 ```
 <div class="sidebar-right">
