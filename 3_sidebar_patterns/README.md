@@ -1,27 +1,27 @@
 # Implement Pattern-Sidebar
 
-## app.css
+## Änderung app.css
 app.css in eurem Projekt ersetzen. Falls ihr die geändert habt, darauf achten, dass ihr die Datei nicht komplett überschreibt.
 
 
-## page.svelte
+## Änderung page.svelte
 page.svelte anpassen, wie folgt:
 
 
-### Slide-Transitions Patternwechsel
+<b>Slide-Transitions Patternwechsel</b>
 ```
 import { slide } from 'svelte/transition';
 ```
 
 
-### eure Pattern-Imports
+#### eure Pattern-Imports
 ```
 import Pattern1 from '$lib/components/1_PatternPolygonReactive.svelte';
 import Pattern2 from '$lib/components/2_PatternPolygonReactiveOffsetSize.svelte';
 ```
 
 
-### Beschreibung der Patterns für die Sidebar, mit Verknüpfung der Komponenten
+#### Beschreibung der Patterns für die Sidebar, mit Verknüpfung der Komponenten
 ```
 let patterns = [
   {
@@ -40,14 +40,14 @@ let patterns = [
 ```
 
 
-### Trigger für Patternwechsel bei Klick auf Pattern in der Sidebar
+#### Trigger für Patternwechsel bei Klick auf Pattern in der Sidebar
 ```
 let selectedPattern = $state(0);
 let SelectedPattern = $derived(patterns[selectedPattern].component);
 ```
 
 
-### Sidebar-Left hinzufügen + variable SelectedPattern-Komponente (wird bei Klick ausgetauscht)
+#### Sidebar-Left hinzufügen + variable SelectedPattern-Komponente (wird bei Klick ausgetauscht)
 ```
 <div class="app-container">
 	<Header />
@@ -72,7 +72,8 @@ let SelectedPattern = $derived(patterns[selectedPattern].component);
 ```
 
 
-### Sidebar-Right in Pattern-Komponente hinzufügen, sie z.b. 1_PatternPolygonReactive.svelte
+## Änderung im Pattern 
+Sidebar-Right in Pattern-Komponente hinzufügen, sie z.b. 1_PatternPolygonReactive.svelte
 ```
 <div class="sidebar-right">
 	<Slider min={0} max={50} bind:value={squareOffset} label="Square Offset" />
