@@ -42,9 +42,9 @@
 	/>
 
 	<div class="color-section">
-		<h3 style="margin: 0 0 10px 0; font-size: 1rem; font-weight: 500;">
-			Polygon Colors
-		</h3>
+		<h3 style="margin: 0 0 10px 0; font-size: 1rem; font-weight: 500;">Polygon Colors</h3>
+
+		<!-- <ColorPickerHSV bind:color={colors[1]} width={310} /> -->
 		<EditableColorPalette
 			bind:colors
 			bind:selectedColorIndex
