@@ -23,19 +23,6 @@
 	function getOpacity(xi) {
 		return opacityMin + (xi / (squareCount - 1)) * (opacityMax - opacityMin);
 	}
-
-	function patternClick(event) {
-		const colorIndex = event.target.getAttribute('data-color-index');
-		selectedColorIndex = parseInt(colorIndex, 10);
-	}
-
-	function patternKeyDown(event) {
-		if (event.key === 'Enter' || event.key === ' ') {
-			event.preventDefault();
-			const colorIndex = event.target.getAttribute('data-color-index');
-			selectedColorIndex = parseInt(colorIndex, 10);
-		}
-	}
 </script>
 
 <div class="sidebar">
